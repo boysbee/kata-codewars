@@ -1,0 +1,1 @@
+## The Kata practice from codewars.com
