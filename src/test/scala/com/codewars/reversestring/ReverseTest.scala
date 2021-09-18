@@ -1,11 +1,10 @@
 package com.codewars.reversestring
 
-import org.scalatest.FunSuite
-
+import org.scalatest.funsuite.AnyFunSuite
 /**
   * Created by boysbee on 9/6/2016.
   */
-class ReverseTest extends FunSuite {
+class ReverseTest extends AnyFunSuite :
 
   test("it should return \"1\" when put \"1\""){
     val actual = Reverse.reverse("1");
@@ -30,4 +29,4 @@ class ReverseTest extends FunSuite {
     val actual = Reverse.reverse("12345");
     assert( "54321" == actual)
   }
-}
+end ReverseTest

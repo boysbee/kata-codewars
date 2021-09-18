@@ -1,11 +1,14 @@
-name := "kata-codewars"
+val scala3Version = "3.0.2"
 
-version := "1.0"
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "kata-codewars",
+    version := "2.0.0",
 
-scalaVersion := "2.12.2"
+    scalaVersion := scala3Version,
 
-libraryDependencies ++= Seq(
-  "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test",
-  "junit" % "junit" % "4.11" % "test",
-  "com.novocode" % "junit-interface" % "0.11" % "test" exclude("junit", "junit-dep")
+    libraryDependencies ++= Seq(
+      "org.scalatest" %% "scalatest" % "3.2.9" % Test
+    )
 )

@@ -1,11 +1,13 @@
 package com.codewars.findgcf
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest._
+import matchers.should._
 
 /**
   * Created by boysbee on 9/8/2016 AD.
   */
-class FindGCFSpec extends FlatSpec with Matchers {
+class FindGCFSpec extends AnyFlatSpec with Matchers {
   val finder: FindGCF = new FindGCF
   it should "return 2 when find gcf with 2,2" in {
     val result = finder.findGCF(2, 2)
