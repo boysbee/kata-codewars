@@ -8,7 +8,7 @@ object Reverse {
   def recursiveReverse(text: String): String = {
     def _reverse(t: String, ac: String): String = {
       if (t.length == 0) ""
-      else t.last + _reverse(t.substring(0, t.length - 1), ac.appended(t.last))
+      else ac.appended(t.last) + _reverse(t.substring(0, t.length - 1), ac)
     }
 
     _reverse(text, "")
