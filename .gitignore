@@ -146,3 +146,8 @@ project/plugins/project/
 
 /project
 # End of https://www.gitignore.io/api/sbt,scala,intellij+all,intellij+iml
+
+.bsp
+.bloop
+.metals
+.vscode
